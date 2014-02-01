@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  init_balance: 9.99
+  date: 2014-01-31
+  active: false
+  note: MyText
+
+two:
+  name: MyString
+  init_balance: 9.99
+  date: 2014-01-31
+  active: false
+  note: MyText
