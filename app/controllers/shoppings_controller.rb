@@ -25,7 +25,7 @@ class ShoppingsController < ApplicationController
   # GET /shoppings/new.json
   def new
     @shopping = Shopping.new
-
+    @shopping.products.build
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @shopping }
@@ -40,6 +40,7 @@ class ShoppingsController < ApplicationController
   # POST /shoppings
   # POST /shoppings.json
   def create
+
     @shopping = Shopping.new(params[:shopping])
 
     respond_to do |format|
