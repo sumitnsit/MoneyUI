@@ -16767,3 +16767,1368 @@ Served asset /units.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-03 15:57:27 +0530
 Served asset /application.js - 304 Not Modified (4ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/shopping" for 127.0.0.1 at 2014-02-03 22:06:27 +0530
+
+ActionController::RoutingError (No route matches [GET] "/shopping"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/shoppings" for 127.0.0.1 at 2014-02-03 22:06:31 +0530
+Processing by ShoppingsController#index as HTML
+  [1m[36mShopping Load (0.2ms)[0m  [1mSELECT "shoppings".* FROM "shoppings" [0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."shopping_id" = 1
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."shopping_id" = 2[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."shopping_id" = 3
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."shopping_id" = 4[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."shopping_id" = 5
+  Rendered shoppings/index.html.erb within layouts/application (103.5ms)
+Compiled jquery.js  (6ms)  (pid 2377)
+Compiled jquery_ujs.js  (0ms)  (pid 2377)
+Compiled jquery.nested-fields.js  (0ms)  (pid 2377)
+Compiled application.js  (177ms)  (pid 2377)
+Completed 200 OK in 543ms (Views: 493.4ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/assets/merchants.css?body=1" for 127.0.0.1 at 2014-02-03 22:06:32 +0530
+Served asset /merchants.css - 200 OK (1ms)
+
+
+Started GET "/assets/shoppings.css?body=1" for 127.0.0.1 at 2014-02-03 22:06:32 +0530
+Served asset /shoppings.css - 200 OK (1ms)
+
+
+Started GET "/assets/transfers.css?body=1" for 127.0.0.1 at 2014-02-03 22:06:32 +0530
+Served asset /transfers.css - 200 OK (6ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2014-02-03 22:06:32 +0530
+Served asset /categories.css - 200 OK (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-03 22:06:32 +0530
+Served asset /application.css - 200 OK (12ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-03 22:06:32 +0530
+Served asset /scaffolds.css - 200 OK (2ms)
+
+
+Started GET "/assets/units.css?body=1" for 127.0.0.1 at 2014-02-03 22:06:32 +0530
+Served asset /units.css - 200 OK (2ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-02-03 22:06:32 +0530
+Served asset /products.css - 200 OK (1ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2014-02-03 22:06:32 +0530
+Served asset /accounts.js - 200 OK (4ms)
+
+
+Started GET "/assets/merchants.js?body=1" for 127.0.0.1 at 2014-02-03 22:06:32 +0530
+Served asset /merchants.js - 200 OK (54ms)
+
+
+Started GET "/assets/units.js?body=1" for 127.0.0.1 at 2014-02-03 22:06:32 +0530
+Served asset /units.js - 200 OK (1ms)
+
+
+Started GET "/assets/shoppings.js?body=1" for 127.0.0.1 at 2014-02-03 22:06:32 +0530
+Served asset /shoppings.js - 200 OK (1ms)
+
+
+Started GET "/assets/transfers.js?body=1" for 127.0.0.1 at 2014-02-03 22:06:32 +0530
+Served asset /transfers.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.nested-fields.js?body=1" for 127.0.0.1 at 2014-02-03 22:06:32 +0530
+Served asset /jquery.nested-fields.js - 200 OK (4ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2014-02-03 22:06:32 +0530
+Served asset /categories.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-03 22:06:32 +0530
+Served asset /application.js - 200 OK (22ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-02-03 22:06:32 +0530
+Served asset /products.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-03 22:06:32 +0530
+Served asset /jquery_ujs.js - 200 OK (4ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2014-02-03 22:06:32 +0530
+Served asset /accounts.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-03 22:06:32 +0530
+Served asset /jquery.js - 200 OK (12ms)
+
+
+Started GET "/shoppings/new" for 127.0.0.1 at 2014-02-03 22:06:36 +0530
+Processing by ShoppingsController#new as HTML
+  [1m[36mAccount Load (0.1ms)[0m  [1mSELECT "accounts".* FROM "accounts" [0m
+  [1m[35mUnit Load (0.2ms)[0m  SELECT "units".* FROM "units" 
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "units".* FROM "units" 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" [0m
+  [1m[35mMerchant Load (0.1ms)[0m  SELECT "merchants".* FROM "merchants" 
+  Rendered shoppings/_form.html.erb (632.0ms)
+  Rendered shoppings/new.html.erb within layouts/application (706.3ms)
+Completed 200 OK in 830ms (Views: 826.5ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/shoppings" for 127.0.0.1 at 2014-02-03 22:07:04 +0530
+Processing by ShoppingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CQNz8LX4AJgNvT/YSAyXZ2pbaVWhqf0TSkn4X0EWAWA=", "shopping"=>{"account_id"=>"1", "amount"=>"5212", "date(1i)"=>"2014", "date(2i)"=>"2", "date(3i)"=>"3", "products_attributes"=>{"0"=>{"name"=>"hello", "quantity"=>"1", "unit_id"=>"1", "category_id"=>"1", "rate"=>"33", "amount"=>"33", "id"=>"", "_destroy"=>"false"}, "1391445399113"=>{"name"=>"milk", "quantity"=>"343", "unit_id"=>"1", "category_id"=>"1", "rate"=>"22", "amount"=>"23", "id"=>"", "_destroy"=>"false"}, "1391445400426"=>{"name"=>"ffafsdf", "quantity"=>"223", "unit_id"=>"1", "category_id"=>"1", "rate"=>"32323", "amount"=>"2", "id"=>"", "_destroy"=>"false"}}, "merchant_id"=>"1", "bill_number"=>"23324324324324"}, "commit"=>"Create Shopping"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (16.0ms)[0m  INSERT INTO "shoppings" ("account_id", "amount", "bill_number", "created_at", "date", "merchant_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["account_id", 1], ["amount", #<BigDecimal:7fda640f2fa8,'0.5212E4',9(18)>], ["bill_number", "23324324324324"], ["created_at", Mon, 03 Feb 2014 16:37:04 UTC +00:00], ["date", Mon, 03 Feb 2014], ["merchant_id", 1], ["updated_at", Mon, 03 Feb 2014 16:37:04 UTC +00:00]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "products" ("amount", "category_id", "created_at", "name", "quantity", "rate", "shopping_id", "unit_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["amount", #<BigDecimal:7fda62bb3cf0,'0.33E2',9(18)>], ["category_id", 1], ["created_at", Mon, 03 Feb 2014 16:37:04 UTC +00:00], ["name", "hello"], ["quantity", #<BigDecimal:7fda62bb3e08,'0.1E1',9(18)>], ["rate", #<BigDecimal:7fda62bb3d68,'0.33E2',9(18)>], ["shopping_id", 6], ["unit_id", 1], ["updated_at", Mon, 03 Feb 2014 16:37:04 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "products" ("amount", "category_id", "created_at", "name", "quantity", "rate", "shopping_id", "unit_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["amount", #<BigDecimal:7fda62bba6e0,'0.23E2',9(18)>], ["category_id", 1], ["created_at", Mon, 03 Feb 2014 16:37:04 UTC +00:00], ["name", "milk"], ["quantity", #<BigDecimal:7fda62bba7f8,'0.343E3',9(18)>], ["rate", #<BigDecimal:7fda62bba758,'0.22E2',9(18)>], ["shopping_id", 6], ["unit_id", 1], ["updated_at", Mon, 03 Feb 2014 16:37:04 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "products" ("amount", "category_id", "created_at", "name", "quantity", "rate", "shopping_id", "unit_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["amount", #<BigDecimal:7fda62bc1738,'0.2E1',9(18)>], ["category_id", 1], ["created_at", Mon, 03 Feb 2014 16:37:04 UTC +00:00], ["name", "ffafsdf"], ["quantity", #<BigDecimal:7fda62bc1850,'0.223E3',9(18)>], ["rate", #<BigDecimal:7fda62bc17b0,'0.32323E5',9(18)>], ["shopping_id", 6], ["unit_id", 1], ["updated_at", Mon, 03 Feb 2014 16:37:04 UTC +00:00]]
+  [1m[35m (33.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/shoppings/6
+Completed 302 Found in 74ms (ActiveRecord: 50.2ms)
+
+
+Started GET "/shoppings/6" for 127.0.0.1 at 2014-02-03 22:07:04 +0530
+Processing by ShoppingsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mShopping Load (0.2ms)[0m  [1mSELECT "shoppings".* FROM "shoppings" WHERE "shoppings"."id" = ? LIMIT 1[0m  [["id", "6"]]
+  [1m[35mAccount Load (0.2ms)[0m  SELECT "accounts".* FROM "accounts" WHERE "accounts"."id" = 1 LIMIT 1
+  [1m[36mMerchant Load (0.3ms)[0m  [1mSELECT "merchants".* FROM "merchants" WHERE "merchants"."id" = 1 LIMIT 1[0m
+  Rendered shoppings/show.html.erb within layouts/application (53.7ms)
+Completed 200 OK in 209ms (Views: 206.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.nested-fields.js?body=1" for 127.0.0.1 at 2014-02-03 22:07:04 +0530
+Served asset /jquery.nested-fields.js - 304 Not Modified (0ms)
+
+
+Started GET "/shoppings" for 127.0.0.1 at 2014-02-03 22:07:06 +0530
+Processing by ShoppingsController#index as HTML
+  [1m[35mShopping Load (0.2ms)[0m  SELECT "shoppings".* FROM "shoppings" 
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."shopping_id" = 1[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."shopping_id" = 2
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."shopping_id" = 3[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."shopping_id" = 4
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."shopping_id" = 5[0m
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."shopping_id" = 6
+  Rendered shoppings/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 70ms (Views: 66.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.nested-fields.js?body=1" for 127.0.0.1 at 2014-02-03 22:07:06 +0530
+Served asset /jquery.nested-fields.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUnits (20140130104902)
+Migrating to CreateMerchants (20140131045757)
+Migrating to CreateCategories (20140131045936)
+Migrating to CreateAccounts (20140131051746)
+Migrating to CreateTransfers (20140131053047)
+Migrating to CreateProducts (20140131093115)
+Migrating to CreateShoppings (20140131103304)
+Migrating to AddColumnShoppingIdToProducts (20140203063003)
+  [1m[35m (6.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2014-02-03 22:13:52 +0530
+Served asset /rails.png - 200 OK (29ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2014-02-03 22:13:55 +0530
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-03 22:14:14 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html within layouts/application (1.3ms)
+Compiled welcome.css  (92ms)  (pid 2598)
+Compiled application.css  (99ms)  (pid 2598)
+Compiled welcome.js  (569ms)  (pid 2598)
+Compiled application.js  (594ms)  (pid 2598)
+Completed 200 OK in 1138ms (Views: 1137.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-03 22:14:15 +0530
+Served asset /application.css - 304 Not Modified (23ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2014-02-03 22:14:15 +0530
+Served asset /categories.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2014-02-03 22:14:15 +0530
+Served asset /accounts.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/merchants.css?body=1" for 127.0.0.1 at 2014-02-03 22:14:15 +0530
+Served asset /merchants.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-03 22:14:15 +0530
+Served asset /welcome.js - 200 OK (4ms)
+
+
+Started GET "/assets/shoppings.css?body=1" for 127.0.0.1 at 2014-02-03 22:14:15 +0530
+Served asset /shoppings.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-03 22:14:15 +0530
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/transfers.css?body=1" for 127.0.0.1 at 2014-02-03 22:14:15 +0530
+Served asset /transfers.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-03 22:14:15 +0530
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/units.css?body=1" for 127.0.0.1 at 2014-02-03 22:14:15 +0530
+Served asset /units.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2014-02-03 22:14:15 +0530
+Served asset /accounts.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-03 22:14:15 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2014-02-03 22:14:15 +0530
+Served asset /categories.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/merchants.js?body=1" for 127.0.0.1 at 2014-02-03 22:14:15 +0530
+Served asset /merchants.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-02-03 22:14:15 +0530
+Served asset /products.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-02-03 22:14:15 +0530
+Served asset /products.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/shoppings.js?body=1" for 127.0.0.1 at 2014-02-03 22:14:15 +0530
+Served asset /shoppings.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/transfers.js?body=1" for 127.0.0.1 at 2014-02-03 22:14:15 +0530
+Served asset /transfers.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.nested-fields.js?body=1" for 127.0.0.1 at 2014-02-03 22:14:15 +0530
+Served asset /jquery.nested-fields.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/units.js?body=1" for 127.0.0.1 at 2014-02-03 22:14:15 +0530
+Served asset /units.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-03 22:14:15 +0530
+Served asset /welcome.css - 200 OK (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-03 22:14:15 +0530
+Served asset /application.js - 304 Not Modified (72ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-03 22:15:36 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html within layouts/application (0.0ms)
+Completed 200 OK in 54ms (Views: 54.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:36 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:36 +0530
+Served asset /accounts.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:36 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/merchants.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:36 +0530
+Served asset /merchants.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:36 +0530
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:36 +0530
+Served asset /categories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shoppings.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:36 +0530
+Served asset /shoppings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/transfers.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:36 +0530
+Served asset /transfers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/units.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:36 +0530
+Served asset /units.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:36 +0530
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:36 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:36 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:36 +0530
+Served asset /categories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:36 +0530
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/merchants.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:36 +0530
+Served asset /merchants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:36 +0530
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/transfers.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:36 +0530
+Served asset /transfers.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/shoppings.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:36 +0530
+Served asset /shoppings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/units.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:36 +0530
+Served asset /units.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:36 +0530
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nested-fields.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:36 +0530
+Served asset /jquery.nested-fields.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:36 +0530
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-03 22:15:38 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html within layouts/application (0.0ms)
+Completed 200 OK in 93ms (Views: 92.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:38 +0530
+Served asset /categories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:38 +0530
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/merchants.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:38 +0530
+Served asset /merchants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:38 +0530
+Served asset /products.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:38 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/units.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:38 +0530
+Served asset /units.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:38 +0530
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:38 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shoppings.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:38 +0530
+Served asset /shoppings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:38 +0530
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/transfers.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:38 +0530
+Served asset /transfers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:38 +0530
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:38 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:38 +0530
+Served asset /categories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/merchants.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:38 +0530
+Served asset /merchants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/transfers.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:38 +0530
+Served asset /transfers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/units.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:38 +0530
+Served asset /units.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shoppings.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:38 +0530
+Served asset /shoppings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:38 +0530
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:38 +0530
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:38 +0530
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nested-fields.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:38 +0530
+Served asset /jquery.nested-fields.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-03 22:15:38 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html within layouts/application (0.0ms)
+Completed 200 OK in 57ms (Views: 56.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:39 +0530
+Served asset /products.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:39 +0530
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:39 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/merchants.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:39 +0530
+Served asset /merchants.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:39 +0530
+Served asset /categories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shoppings.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:39 +0530
+Served asset /shoppings.css - 304 Not Modified (40ms)
+
+
+Started GET "/assets/transfers.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:39 +0530
+Served asset /transfers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:39 +0530
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/units.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:39 +0530
+Served asset /units.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:39 +0530
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:39 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:39 +0530
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:39 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/merchants.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:39 +0530
+Served asset /merchants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/transfers.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:39 +0530
+Served asset /transfers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shoppings.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:39 +0530
+Served asset /shoppings.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:39 +0530
+Served asset /categories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:39 +0530
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/units.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:39 +0530
+Served asset /units.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:39 +0530
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nested-fields.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:39 +0530
+Served asset /jquery.nested-fields.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:39 +0530
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-03 22:15:39 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html within layouts/application (0.0ms)
+Completed 200 OK in 54ms (Views: 53.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:39 +0530
+Served asset /categories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/merchants.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:39 +0530
+Served asset /merchants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:39 +0530
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shoppings.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:39 +0530
+Served asset /shoppings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/transfers.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:39 +0530
+Served asset /transfers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:39 +0530
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:39 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:39 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:39 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:39 +0530
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:39 +0530
+Served asset /categories.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:39 +0530
+Served asset /products.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/units.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:39 +0530
+Served asset /units.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/shoppings.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:39 +0530
+Served asset /shoppings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/transfers.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:39 +0530
+Served asset /transfers.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:39 +0530
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/merchants.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:39 +0530
+Served asset /merchants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:39 +0530
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/units.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:39 +0530
+Served asset /units.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nested-fields.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:39 +0530
+Served asset /jquery.nested-fields.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:39 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:39 +0530
+Served asset /application.js - 304 Not Modified (44ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-03 22:15:40 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html within layouts/application (0.0ms)
+Completed 200 OK in 52ms (Views: 52.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:40 +0530
+Served asset /products.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/merchants.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:40 +0530
+Served asset /merchants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:40 +0530
+Served asset /categories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:40 +0530
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/transfers.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:40 +0530
+Served asset /transfers.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/shoppings.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:40 +0530
+Served asset /shoppings.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/units.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:40 +0530
+Served asset /units.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:40 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:40 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:40 +0530
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:40 +0530
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:40 +0530
+Served asset /categories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:40 +0530
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:40 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:40 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shoppings.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:40 +0530
+Served asset /shoppings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/transfers.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:40 +0530
+Served asset /transfers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/units.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:40 +0530
+Served asset /units.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/merchants.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:40 +0530
+Served asset /merchants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:40 +0530
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nested-fields.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:40 +0530
+Served asset /jquery.nested-fields.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:40 +0530
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-03 22:15:40 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html within layouts/application (0.0ms)
+Completed 200 OK in 97ms (Views: 97.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:40 +0530
+Served asset /categories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:40 +0530
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shoppings.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:40 +0530
+Served asset /shoppings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:40 +0530
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/merchants.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:40 +0530
+Served asset /merchants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:40 +0530
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/transfers.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:40 +0530
+Served asset /transfers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/units.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:40 +0530
+Served asset /units.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:40 +0530
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:40 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:40 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:40 +0530
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:40 +0530
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-03 22:15:40 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html within layouts/application (0.0ms)
+Completed 200 OK in 54ms (Views: 53.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-03 22:15:40 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html within layouts/application (0.0ms)
+Completed 200 OK in 54ms (Views: 53.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:40 +0530
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:40 +0530
+Served asset /products.css - 200 OK (0ms)
+
+
+Started GET "/assets/transfers.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:40 +0530
+Served asset /transfers.css - 200 OK (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:40 +0530
+Served asset /welcome.css - 200 OK (0ms)
+
+
+Started GET "/assets/units.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:40 +0530
+Served asset /units.css - 200 OK (0ms)
+
+
+Started GET "/assets/merchants.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:41 +0530
+Served asset /merchants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:41 +0530
+Served asset /categories.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:41 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shoppings.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:41 +0530
+Served asset /shoppings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:41 +0530
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:41 +0530
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:41 +0530
+Served asset /application.css - 200 OK (62ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:41 +0530
+Served asset /accounts.js - 200 OK (0ms)
+
+
+Started GET "/assets/merchants.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:41 +0530
+Served asset /merchants.js - 200 OK (0ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:41 +0530
+Served asset /categories.js - 200 OK (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:41 +0530
+Served asset /products.js - 200 OK (0ms)
+
+
+Started GET "/assets/shoppings.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:41 +0530
+Served asset /shoppings.js - 200 OK (0ms)
+
+
+Started GET "/assets/transfers.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:41 +0530
+Served asset /transfers.js - 200 OK (0ms)
+
+
+Started GET "/assets/units.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:41 +0530
+Served asset /units.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.nested-fields.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:41 +0530
+Served asset /jquery.nested-fields.js - 200 OK (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:41 +0530
+Served asset /welcome.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:41 +0530
+Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-03 22:15:51 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html within layouts/application (3.5ms)
+Completed 200 OK in 130ms (Views: 129.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:51 +0530
+Served asset /accounts.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/merchants.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:51 +0530
+Served asset /merchants.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:51 +0530
+Served asset /categories.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:51 +0530
+Served asset /products.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:51 +0530
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:51 +0530
+Served asset /welcome.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/transfers.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:51 +0530
+Served asset /transfers.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/shoppings.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:51 +0530
+Served asset /shoppings.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/units.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:51 +0530
+Served asset /units.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:51 +0530
+Served asset /application.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:51 +0530
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:51 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:51 +0530
+Served asset /accounts.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:51 +0530
+Served asset /categories.js - 304 Not Modified (41ms)
+
+
+Started GET "/assets/merchants.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:51 +0530
+Served asset /merchants.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/shoppings.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:51 +0530
+Served asset /shoppings.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/transfers.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:51 +0530
+Served asset /transfers.js - 304 Not Modified (1ms)
+
+
+Started GET "/index.css" for 127.0.0.1 at 2014-02-03 22:15:51 +0530
+
+ActionController::RoutingError (No route matches [GET] "/index.css"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:51 +0530
+Served asset /welcome.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.nested-fields.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:51 +0530
+Served asset /jquery.nested-fields.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:51 +0530
+Served asset /application.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/units.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:51 +0530
+Served asset /units.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:51 +0530
+Served asset /products.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-03 22:15:53 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html within layouts/application (0.0ms)
+Completed 200 OK in 58ms (Views: 58.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:53 +0530
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:53 +0530
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:53 +0530
+Served asset /categories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:53 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/merchants.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:53 +0530
+Served asset /merchants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:53 +0530
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shoppings.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:53 +0530
+Served asset /shoppings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:53 +0530
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/transfers.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:53 +0530
+Served asset /transfers.css - 304 Not Modified (54ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:53 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/units.css?body=1" for 127.0.0.1 at 2014-02-03 22:15:53 +0530
+Served asset /units.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:53 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:53 +0530
+Served asset /categories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:53 +0530
+Served asset /products.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/transfers.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:53 +0530
+Served asset /transfers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/units.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:53 +0530
+Served asset /units.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shoppings.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:53 +0530
+Served asset /shoppings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:53 +0530
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/index.css" for 127.0.0.1 at 2014-02-03 22:15:53 +0530
+
+ActionController::RoutingError (No route matches [GET] "/index.css"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:53 +0530
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:53 +0530
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nested-fields.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:53 +0530
+Served asset /jquery.nested-fields.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/merchants.js?body=1" for 127.0.0.1 at 2014-02-03 22:15:53 +0530
+Served asset /merchants.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-03 22:18:24 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html within layouts/application (0.7ms)
+Compiled welcome.css  (48ms)  (pid 2688)
+Compiled application.css  (3ms)  (pid 2688)
+Completed 200 OK in 139ms (Views: 138.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2014-02-03 22:18:24 +0530
+Served asset /accounts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-02-03 22:18:24 +0530
+Served asset /products.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2014-02-03 22:18:24 +0530
+Served asset /categories.css - 304 Not Modified (46ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-03 22:18:24 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/merchants.css?body=1" for 127.0.0.1 at 2014-02-03 22:18:24 +0530
+Served asset /merchants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-03 22:18:24 +0530
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/shoppings.css?body=1" for 127.0.0.1 at 2014-02-03 22:18:24 +0530
+Served asset /shoppings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/transfers.css?body=1" for 127.0.0.1 at 2014-02-03 22:18:24 +0530
+Served asset /transfers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-03 22:18:24 +0530
+Served asset /welcome.css - 200 OK (1ms)
+
+
+Started GET "/assets/units.css?body=1" for 127.0.0.1 at 2014-02-03 22:18:24 +0530
+Served asset /units.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-03 22:18:24 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2014-02-03 22:18:24 +0530
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2014-02-03 22:18:24 +0530
+Served asset /categories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-02-03 22:18:25 +0530
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shoppings.js?body=1" for 127.0.0.1 at 2014-02-03 22:18:25 +0530
+Served asset /shoppings.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/transfers.js?body=1" for 127.0.0.1 at 2014-02-03 22:18:25 +0530
+Served asset /transfers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/merchants.js?body=1" for 127.0.0.1 at 2014-02-03 22:18:25 +0530
+Served asset /merchants.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-03 22:18:25 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/units.js?body=1" for 127.0.0.1 at 2014-02-03 22:18:25 +0530
+Served asset /units.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-03 22:18:25 +0530
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nested-fields.js?body=1" for 127.0.0.1 at 2014-02-03 22:18:25 +0530
+Served asset /jquery.nested-fields.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-03 22:18:25 +0530
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-03 22:21:18 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html within layouts/application (0.0ms)
+Completed 200 OK in 55ms (Views: 55.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-03 22:21:18 +0530
+Served asset /application.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2014-02-03 22:21:18 +0530
+Served asset /categories.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2014-02-03 22:21:18 +0530
+Served asset /accounts.css - 304 Not Modified (36ms)
+
+
+Started GET "/assets/merchants.css?body=1" for 127.0.0.1 at 2014-02-03 22:21:18 +0530
+Served asset /merchants.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-03 22:21:18 +0530
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-02-03 22:21:18 +0530
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shoppings.css?body=1" for 127.0.0.1 at 2014-02-03 22:21:18 +0530
+Served asset /shoppings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/units.css?body=1" for 127.0.0.1 at 2014-02-03 22:21:18 +0530
+Served asset /units.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-02-03 22:21:18 +0530
+Served asset /welcome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/transfers.css?body=1" for 127.0.0.1 at 2014-02-03 22:21:18 +0530
+Served asset /transfers.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-03 22:21:18 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-03 22:21:18 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2014-02-03 22:21:18 +0530
+Served asset /categories.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2014-02-03 22:21:18 +0530
+Served asset /accounts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/merchants.js?body=1" for 127.0.0.1 at 2014-02-03 22:21:18 +0530
+Served asset /merchants.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/transfers.js?body=1" for 127.0.0.1 at 2014-02-03 22:21:18 +0530
+Served asset /transfers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-02-03 22:21:18 +0530
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shoppings.js?body=1" for 127.0.0.1 at 2014-02-03 22:21:18 +0530
+Served asset /shoppings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/units.js?body=1" for 127.0.0.1 at 2014-02-03 22:21:18 +0530
+Served asset /units.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-02-03 22:21:18 +0530
+Served asset /welcome.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.nested-fields.js?body=1" for 127.0.0.1 at 2014-02-03 22:21:18 +0530
+Served asset /jquery.nested-fields.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-03 22:21:18 +0530
+Served asset /application.js - 304 Not Modified (0ms)
