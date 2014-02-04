@@ -1,4 +1,7 @@
 Money::Application.routes.draw do
+  resources :currencies
+
+
   resources :shoppings
 
 

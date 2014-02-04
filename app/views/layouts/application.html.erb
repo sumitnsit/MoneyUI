@@ -7,8 +7,18 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+	<div class="workarea">
+		<div class="thread">
+			<div class="title">Money Control</div>
+			<br/>
+			<div class="k_form">
+				<div class="border">
+					<div class="inner_border">
+						<%= yield %>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

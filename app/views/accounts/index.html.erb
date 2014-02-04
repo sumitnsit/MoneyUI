@@ -1,31 +1,32 @@
-<h1>Listing accounts</h1>
-
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Init balance</th>
-    <th>Date</th>
-    <th>Active</th>
-    <th>Note</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @accounts.each do |account| %>
-  <tr>
-    <td><%= account.name %></td>
-    <td><%= account.init_balance %></td>
-    <td><%= account.date %></td>
-    <td><%= account.active %></td>
-    <td><%= account.note %></td>
-    <td><%= link_to 'Show', account %></td>
-    <td><%= link_to 'Edit', edit_account_path(account) %></td>
-    <td><%= link_to 'Destroy', account, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
+<div class="sub_title">Accounts</div>
+ <table>
+    <tr>
+        <th>Name</th>
+        <th>Balance</th>
+        <th>Date</th>
+        <th>Active</th>
+        <th></i></th>
+        <th></th> 
+    </tr>
+    <% @accounts.each do |account| %>
+        <tr>
+            <td><%= link_to account.name, account %></td>
+            <td><%= account.init_balance %></td>
+            <td><%= account.date %></td>
+            <td>
+                <% if account.active %>
+                    <div class="k_dot_green"></div>
+                <% else %>
+                    <div class="k_dot_red"></div>
+                <% end %>
+            </td>
+            <td><%= link_to '<i class="icon-edit"></i>'.html_safe, edit_account_path(account) %></td>
+            <td><%= link_to '<i class="icon-trash"></i>'.html_safe, account, method: :delete, data: { confirm: 'Are you sure?' } %></td> 
+        </tr>
+    <% end %>
 </table>
 
-<br />
+<div class="button_bar">
+<%= link_to '<button val="Add" class="k_button" style="background-color: rgb(31, 54, 32) !important;">New Account</button>'.html_safe, new_account_path %>
 
-<%= link_to 'New Account', new_account_path %>
+</div>

@@ -11,6 +11,12 @@
     </div>
   <% end %>
 
+    <div class="field">
+    <%= f.label :date %><br />
+    <%= f.date_select :date %>
+    <!-- <input name="date" type="Date" value="2014-01-30"></input>   -->
+  </div>
+
   <div class="field">
     <%= f.label :name %><br />
     <%= f.text_field :name %>
@@ -19,19 +25,20 @@
     <%= f.label :init_balance %><br />
     <%= f.text_field :init_balance %>
   </div>
-  <div class="field">
-    <%= f.label :date %><br />
-    <%= f.date_select :date %>
-  </div>
+
   <div class="field">
     <%= f.label :active %><br />
     <%= f.check_box :active %>
   </div>
   <div class="field">
     <%= f.label :note %><br />
-    <%= f.text_area :note %>
+    <%= f.text_area :note, :rows => "3"%>
   </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+
+  <div class="button_bar">
+    <%= link_to '<div class="k_button" style="background-color: rgb(80, 1, 1) !important; display: inline-block;">Cancel </div>'.html_safe, accounts_path %>
+     <%= f.submit 'Create Account', :class => 'k_button', :style => 'background-color: rgb(31, 54, 32) !important;' %>
+  </div>  
+
+
 <% end %>

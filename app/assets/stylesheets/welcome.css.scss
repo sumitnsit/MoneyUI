@@ -5,7 +5,7 @@
 body{
 	margin: 0px;
 	padding: 20px 0px;
-	background-color: #999;
+	background-color: #EEE;
 	font-size: 14px;
 	font-family: Helvetica;
 }
@@ -22,7 +22,7 @@ body{
 .thread{
 	height: 1000px;
 	border: 1px dashed #888;
-	padding-top: 40px;
+	padding: 40px;
 	background: -webkit-radial-gradient(rgb(70,74,80), rgb(49,54,59));
 }
 
@@ -39,17 +39,30 @@ body{
 }
 
 .sub_title{
-	font-size: 1.2em;
+	font-size: 1.4em;
 	font-weight: bold;
 	color: #999;
 	text-shadow: 0px 1px 2px #000;
 	font-family: Helvetica;
-	padding-bottom: 4px;
+	padding-bottom: 6px;
 	border-bottom: 1px solid #2E2E2E;
 	box-shadow: 0px 1px 0px #474747;
+	margin-bottom: 20px;
+}
+
+.k_form a{
+	text-decoration: none;
+	color: #999;
+}
+
+.k_form a:hover{
+	text-decoration: none;
+	color: #999;
+	background-color: transparent;
 }
 
 .k_form .border{
+	display: inline-block;
 padding: 10px;
 border: 1px solid #2E2E2E;
 border-radius: 6px;
@@ -80,13 +93,13 @@ border-radius: 6px;
 }
 
 .k_form label{
-	display: block;
-	margin-top: 10px;
+	display: inline-block;
+	// margin-top: 10px;
 	font-size: 0.9e;
 	color: rgb(139, 139, 139);
 	text-shadow: 0px -1px 1px #000;
 	padding-left: 3px;
-	padding-bottom: 5px;
+	// padding-bottom: 5px;
 }
 
 .button_bar{
@@ -106,7 +119,7 @@ border-radius: 6px;
 	box-shadow: 0px 1px 2px rgba(0,0,0,0.35), inset 0px 1px 1px #A0A0A0, inset 0px 0px 1px rgba(0,0,0,0.15);
 	line-height: 40px;
 	text-align: center;
-	color: rgb(139, 139, 139);
+	color: rgb(180, 180, 180);
 	text-shadow: 0px -1px 1px #000;
 	font-family: Arial;
 }
@@ -117,6 +130,7 @@ border-radius: 6px;
 
 .k_form input[type="text"]{
 	margin-top: 5px;
+	margin-bottom: 15px;
 	padding: 7px;
 	border-radius: 5px;
 	border-style: none;
@@ -128,6 +142,23 @@ border-radius: 6px;
 	font-size: 1em;
 	color: #B9B9B9;
 }
+
+.k_form textarea{
+	margin-top: 5px;
+	margin-bottom: 15px;
+	padding: 7px;
+	border-radius: 5px;
+	border-style: none;
+	display: block;
+	width: -webkit-calc(100% - 12px);
+	box-shadow: inset 0px 1px 2px #020202, 0px 1px 1px #5A5A5A;
+	background-color: #333;
+	outline: none;
+	font-size: 1em;
+	color: #B9B9B9;
+	overflow: hidden;
+}
+
 /*.k_select:after{
 	position: absolute;
 	content: '3';
@@ -152,13 +183,22 @@ border-radius: 6px;
 	color: #B9B9B9;
 }
 
+.k_form th:nth-child(1){
+	padding-left: 0px;
+}
+
+.k_form td:nth-child(1){
+	padding-left: 0px;
+}
 
 .k_form table{
-	width: 100%;
+	// width: 100%;
 	border: 1px solid #4B4B4B;
 	box-shadow: 0px 0px 2px #000;
 	border-radius: 6px;
 	padding: 10px;
+	margin-top: 20px;
+	border-collapse: inherit;
 }
 
 .k_form thead{
@@ -168,13 +208,25 @@ border-radius: 6px;
 	text-align: left;
 }
 
-.k_form td, th{
+.k_form th{
+	text-align: left;
 	padding-left: 20px;
 	border: none;
+	color: #000;
+	text-shadow: 0px 1px 1px #616161;
+	font-size: 1.1em;
+	
+}
+
+.k_form td, th{
+	text-align: left;
+	padding-left: 20px;
+	border: none;
+	min-height: 25px;
+	line-height: 25px;
 }
 
 .k_form tr{
-	line-height: 30px;
 	border: none;
 }
 
@@ -218,6 +270,7 @@ border-radius: 6px;
 
 
 .accounts_overview .sub_title{
+
 	padding-left: 20px;
 }
 
@@ -254,4 +307,20 @@ border-radius: 6px;
 .account_data .account_amount{
 	float: right;
 	color: #D3D3D3;
+}
+
+.k_dot_green{
+	width: 36px;
+	height: 10px;
+	background-color: rgb(58, 114, 58);
+	border-radius: 5px;
+	border: 1px solid #0A350A;
+}
+
+.k_dot_red{
+	width: 36px;
+	height: 10px;
+	background-color: #9E2C2C;
+	border-radius: 5px;
+	border: 1px solid #570D0D;
 }

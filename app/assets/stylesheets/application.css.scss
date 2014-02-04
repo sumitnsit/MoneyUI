@@ -11,3 +11,12 @@
  *= require_self
  *= require_tree .
  */
+@import 'compass_twitter_bootstrap_awesome';
+@import 'compass_twitter_bootstrap';
+
+
+a [class^="icon-"], a [class*=" icon-"] {
+	display: inline-block;
+	text-shadow: 0px 1px 1px #222;
+	background-image: none;
+}
