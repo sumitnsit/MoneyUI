@@ -16,8 +16,7 @@ group :assets do
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
-  gem 'compass-rails'
-  gem 'compass_twitter_bootstrap'
+  gem 'font-awesome-sass'
   gem 'uglifier', '>= 1.0.3'
 end
 

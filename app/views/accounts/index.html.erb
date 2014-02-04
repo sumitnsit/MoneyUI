@@ -20,13 +20,12 @@
                     <div class="k_dot_red"></div>
                 <% end %>
             </td>
-            <td><%= link_to '<i class="icon-edit"></i>'.html_safe, edit_account_path(account) %></td>
-            <td><%= link_to '<i class="icon-trash"></i>'.html_safe, account, method: :delete, data: { confirm: 'Are you sure?' } %></td> 
+            <td><%= link_to '<i class="fa fa-edit"></i>'.html_safe, edit_account_path(account) %></td>
+            <td><%= link_to '<i class="fa fa-trash-o"></i>'.html_safe, account, method: :delete, data: { confirm: 'Are you sure?' } %></td> 
         </tr>
     <% end %>
 </table>
 
-<div class="button_bar">
-<%= link_to '<button val="Add" class="k_button" style="background-color: rgb(31, 54, 32) !important;">New Account</button>'.html_safe, new_account_path %>
-
+<div class="k_toolbar_button">
+    <%= button_to "New Account", { :action => "new" }, :method => :get, :class => "k_button_green" %>
 </div>

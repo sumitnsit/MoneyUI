@@ -13,8 +13,7 @@
 
     <div class="field">
     <%= f.label :date %><br />
-    <%= f.date_select :date %>
-    <!-- <input name="date" type="Date" value="2014-01-30"></input>   -->
+    <%= f.text_field :date, :type => "date", :value => Time.now.strftime("%Y-%m-%d") %>
   </div>
 
   <div class="field">
@@ -28,16 +27,16 @@
 
   <div class="field">
     <%= f.label :active %><br />
-    <%= f.check_box :active %>
+    <div class="k_on_off"><%= f.check_box :active, :id => "active" %><label for="active"></label></div>
   </div>
   <div class="field">
     <%= f.label :note %><br />
     <%= f.text_area :note, :rows => "3"%>
   </div>
 
-  <div class="button_bar">
-    <%= link_to '<div class="k_button" style="background-color: rgb(80, 1, 1) !important; display: inline-block;">Cancel </div>'.html_safe, accounts_path %>
-     <%= f.submit 'Create Account', :class => 'k_button', :style => 'background-color: rgb(31, 54, 32) !important;' %>
+  <div class="k_toolbar_button">
+    <%= link_to "<button type='button' class='k_button_red'>Cancel</button>".html_safe, :back %>
+    <%= f.submit :class => 'k_button_green' %>
   </div>  
 
 
