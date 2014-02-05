@@ -23,7 +23,9 @@
     <%= f.label :exchange_rate %><br />
     <%= f.text_field :exchange_rate %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <div class="k_toolbar_button">
+    <%= link_to "<button type='button' class='k_button_red'>Cancel</button>".html_safe, :back %>
+    <%= f.submit :class => 'k_button_green' %>
+  </div>  
+
 <% end %>

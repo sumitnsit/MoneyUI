@@ -11,7 +11,6 @@
     <th>Note</th>
     <th></th>
     <th></th>
-    <th></th>
   </tr>
 
 <% @categories.each do |category| %>
@@ -20,9 +19,8 @@
     <td><%= category.parent.name if category.parent %></td>
     <td><%= category.active %></td>
     <td><%= category.note %></td>
-    <td><%= link_to 'Show', category %></td>
-    <td><%= link_to 'Edit', edit_category_path(category) %></td>
-    <td><%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to '<i class="fa fa-edit"></i>'.html_safe, edit_category_path(category) %></td>
+    <td><%= link_to '<i class="fa fa-trash-o"></i>'.html_safe, category, method: :delete, data: { confirm: 'Are you sure?' } %></td> 
   </tr>
 <% end %>
 </table>

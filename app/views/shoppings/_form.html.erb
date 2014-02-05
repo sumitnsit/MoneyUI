@@ -10,7 +10,10 @@
       </ul>
     </div>
   <% end %>
-
+  <div class="field">
+    <%= f.label :date %><br />
+    <%= f.text_field :date, :type => "date", :value => Time.now.strftime("%Y-%m-%d") %>
+  </div>
   <div class="field">
     <%= f.label :account_id %><br />
     <%= f.select 'account_id', Account.all.collect {|p| [ p.name, p.id ] } %>
@@ -19,12 +22,10 @@
     <%= f.label :amount %><br />
     <%= f.text_field :amount %>
   </div>
-  <div class="field">
-    <%= f.label :date %><br />
-    <%= f.date_select :date %>
-  </div>
 
-<div class="items">
+
+<div class="items2">
+<a href="#" class="add">Add Product</a>
   <table>
     <thead>
       <th>Item</th>
@@ -33,8 +34,9 @@
       <th>Category</th>
       <th>Rate</th>
       <th>Amount</th>
+      <th></th>
     </thead>
-    <tbody>
+    <tbody class="items">
        
       <%= f.nested_fields_for :products do |p| %>
 
@@ -56,22 +58,29 @@
             </td>       
             <td>
               <%= p.text_field :amount %>
+              
+            </td>         
+            <td>
+              <%= link_to '<i class="remove fa fa-trash-o"></i>'.html_safe, nil, data: { confirm: 'Are you sure?' } %></td> 
+
               <a href="#" class="remove">remove</a>
-            </td>                                              
+              <%= p.hidden_field :id %>
+              <%= p.hidden_field :_destroy %>  
+            </td>     
+
         </tr>
         
 
-        <%= p.hidden_field :id %>
-        <%= p.hidden_field :_destroy %>
-      <% end %>
 
+      <% end %>
+      
     </tbody>
     
   </table>
  </div>
 
 
-  <a href="#" class="add">Add Product</a>
+ 
 
 
   <div class="field">
@@ -82,7 +91,9 @@
     <%= f.label :bill_number %><br />
     <%= f.text_field :bill_number %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <div class="k_toolbar_button">
+    <%= link_to "<button type='button' class='k_button_red'>Cancel</button>".html_safe, :back %>
+    <%= f.submit :class => 'k_button_green' %>
+  </div>  
+
 <% end %>

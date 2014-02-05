@@ -12,7 +12,6 @@
     <th>Note</th>
     <th></th>
     <th></th>
-    <th></th>
   </tr>
 
 <% @units.each do |unit| %>
@@ -23,8 +22,9 @@
     <td><%= unit.unit_type %></td>
     <td><%= unit.note %></td>
     <td><%= link_to 'Show', unit %></td>
-    <td><%= link_to 'Edit', edit_unit_path(unit) %></td>
-    <td><%= link_to 'Destroy', unit, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to '<i class="fa fa-edit"></i>'.html_safe, edit_unit_path(unit) %></td>
+    <td><%= link_to '<i class="fa fa-trash-o"></i>'.html_safe, unit, method: :delete, data: { confirm: 'Are you sure?' } %></td> 
+
   </tr>
 <% end %>
 </table>

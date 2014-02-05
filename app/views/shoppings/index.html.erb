@@ -12,19 +12,17 @@
     <th>Bill number</th>
     <th></th>
     <th></th>
-    <th></th>
   </tr>
 
 <% @shoppings.each do |shopping| %>
   <tr>
-    <td><%= shopping.account_id %></td>
-    <td><%= shopping.products %></td>
+    <td><%= shopping.account.name %></td>
+    <td><%= shopping.amount %></td>
     <td><%= shopping.date %></td>
-    <td><%= shopping.merchant_id %></td>
+    <td><%= shopping.merchant.name if shopping.merchant %></td>
     <td><%= shopping.bill_number %></td>
-    <td><%= link_to 'Show', shopping %></td>
-    <td><%= link_to 'Edit', edit_shopping_path(shopping) %></td>
-    <td><%= link_to 'Destroy', shopping, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to '<i class="fa fa-edit"></i>'.html_safe, edit_shopping_path(shopping) %></td>
+    <td><%= link_to '<i class="fa fa-trash-o"></i>'.html_safe, shopping, method: :delete, data: { confirm: 'Are you sure?' } %></td>     
   </tr>
 <% end %>
 </table>

@@ -10,7 +10,6 @@
     <th>Exchange rate</th>
     <th></th>
     <th></th>
-    <th></th>
   </tr>
 
 <% @currencies.each do |currency| %>
@@ -18,9 +17,8 @@
     <td><%= currency.name %></td>
     <td><%= currency.symbol %></td>
     <td><%= currency.exchange_rate %></td>
-    <td><%= link_to 'Show', currency %></td>
-    <td><%= link_to 'Edit', edit_currency_path(currency) %></td>
-    <td><%= link_to 'Destroy', currency, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to '<i class="fa fa-edit"></i>'.html_safe, edit_currency_path(currency) %></td>
+    <td><%= link_to '<i class="fa fa-trash-o"></i>'.html_safe, currency, method: :delete, data: { confirm: 'Are you sure?' } %></td> 
   </tr>
 <% end %>
 </table>
