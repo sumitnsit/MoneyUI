@@ -44,7 +44,7 @@ class MerchantsController < ApplicationController
 
     respond_to do |format|
       if @merchant.save
-        format.html { redirect_to @merchant, notice: 'Merchant was successfully created.' }
+        format.html { redirect_to merchants_url, notice: 'Merchant was successfully created.' }
         format.json { render json: @merchant, status: :created, location: @merchant }
       else
         format.html { render action: "new" }
@@ -60,7 +60,7 @@ class MerchantsController < ApplicationController
 
     respond_to do |format|
       if @merchant.update_attributes(params[:merchant])
-        format.html { redirect_to @merchant, notice: 'Merchant was successfully updated.' }
+        format.html { redirect_to merchants_url, notice: 'Merchant was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

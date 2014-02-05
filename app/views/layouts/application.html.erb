@@ -5,21 +5,24 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
-  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> -->
 </head>
-<body>
-	<div class="workarea">
-		<div class="thread">
-			<div class="title">Money Control</div>
-			<br/>
-			<div class="k_form">
-				<div class="border">
-					<div class="inner_border">
-						<%= yield %>
-					</div>
+	<body>
+		<div class="workarea">
+			<div class="thread">
+				<div class="title">Money Control</div>
+				<div class="k_toolbar">
+					<%= link_to "Accounts", :accounts, :action => "index" %>
+					<%= link_to "Merchants", :merchants, :action => "index" %>
+					<%= link_to "Shopping", :shoppings, :action => "index" %>
+					<%= link_to "Transfer", :transfers, :action => "index" %>
+					<%= link_to "Units", :units, :action => "index" %>
+					<%= link_to "Categories", :categories, :action => "index" %>
+					<%= link_to "Currencies", :currencies, :action => "index" %>
 				</div>
+				<br/>
+				<%= yield %>
 			</div>
 		</div>
-	</div>
-</body>
+	</body>
 </html>

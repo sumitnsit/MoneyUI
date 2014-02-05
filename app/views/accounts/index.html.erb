@@ -1,31 +1,37 @@
-<div class="sub_title">Accounts</div>
- <table>
-    <tr>
-        <th>Name</th>
-        <th>Balance</th>
-        <th>Date</th>
-        <th>Active</th>
-        <th></i></th>
-        <th></th> 
-    </tr>
-    <% @accounts.each do |account| %>
-        <tr>
-            <td><%= link_to account.name, account %></td>
-            <td><%= account.init_balance %></td>
-            <td><%= account.date %></td>
-            <td>
-                <% if account.active %>
-                    <div class="k_dot_green"></div>
-                <% else %>
-                    <div class="k_dot_red"></div>
-                <% end %>
-            </td>
-            <td><%= link_to '<i class="fa fa-edit"></i>'.html_safe, edit_account_path(account) %></td>
-            <td><%= link_to '<i class="fa fa-trash-o"></i>'.html_safe, account, method: :delete, data: { confirm: 'Are you sure?' } %></td> 
-        </tr>
-    <% end %>
-</table>
+<div class="k_form">
+  <div class="border">
+    <div class="inner_border">
+        <div class="sub_title">Accounts</div>
+         <table>
+            <tr>
+                <th>Name</th>
+                <th>Balance</th>
+                <th>Date</th>
+                <th>Active</th>
+                <th></i></th>
+                <th></th> 
+            </tr>
+            <% @accounts.each do |account| %>
+                <tr>
+                    <td><%= link_to account.name, account %></td>
+                    <td><%= account.init_balance %></td>
+                    <td><%= account.date %></td>
+                    <td>
+                        <% if account.active %>
+                            <div class="k_dot_green"></div>
+                        <% else %>
+                            <div class="k_dot_red"></div>
+                        <% end %>
+                    </td>
+                    <td><%= link_to '<i class="fa fa-edit"></i>'.html_safe, edit_account_path(account) %></td>
+                    <td><%= link_to '<i class="fa fa-trash-o"></i>'.html_safe, account, method: :delete, data: { confirm: 'Are you sure?' } %></td> 
+                </tr>
+            <% end %>
+        </table>
 
-<div class="k_toolbar_button">
-    <%= button_to "New Account", { :action => "new" }, :method => :get, :class => "k_button_green" %>
+        <div class="k_toolbar_button">
+            <%= button_to "New Account", { :action => "new" }, :method => :get, :class => "k_button_green" %>
+        </div>
+    </div>
+  </div>
 </div>

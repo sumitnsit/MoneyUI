@@ -1,4 +1,7 @@
-<h1>Listing transfers</h1>
+<div class="k_form">
+  <div class="border">
+    <div class="inner_border">
+        <div class="sub_title">Transactions</div>
 
 <table>
   <tr>
@@ -25,7 +28,9 @@
   </tr>
 <% end %>
 </table>
-
-<br />
-
-<%= link_to 'New Transfer', new_transfer_path %>
+        <div class="k_toolbar_button">
+            <%= button_to "New Transaction", { :action => "new" }, :method => :get, :class => "k_button_green" %>
+        </div>
+    </div>
+  </div>
+</div>

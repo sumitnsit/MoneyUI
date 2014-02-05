@@ -62,17 +62,17 @@ body{
 }
 
 .k_form .border{
-	display: inline-block;
-padding: 10px;
-border: 1px solid #2E2E2E;
-border-radius: 6px;
-box-shadow: 0px 0px 15px #2E2E2E;
+	display: block;
+	padding: 10px;
+	// border: 1px solid #2E2E2E;
+	// border-radius: 6px;
+	// box-shadow: 0px 0px 15px #2E2E2E;
 }
 
 .inner_border{
 	padding: 20px;
-border: 1px dashed #5F5F5F;
-border-radius: 6px;
+	// border: 1px dashed #5F5F5F;
+	// border-radius: 6px;
 }
 
 .inner_border input[type="date"]{
@@ -107,20 +107,7 @@ border-radius: 6px;
 	text-align: right;
 }
 
-.k_form input[type="text"]{
-	margin-top: 5px;
-	margin-bottom: 15px;
-	padding: 7px;
-	border-radius: 5px;
-	border-style: none;
-	display: block;
-	width: -webkit-calc(100% - 12px);
-	box-shadow: inset 0px 1px 2px #020202, 0px 1px 1px #5A5A5A;
-	background-color: #333;
-	outline: none;
-	font-size: 1em;
-	color: #B9B9B9;
-}
+
 
 .k_form textarea{
 	margin-top: 5px;
@@ -171,7 +158,7 @@ border-radius: 6px;
 }
 
 .k_form table{
-	// width: 100%;
+	width: 100%;
 	border: 1px solid #4B4B4B;
 	box-shadow: 0px 0px 2px #000;
 	border-radius: 6px;

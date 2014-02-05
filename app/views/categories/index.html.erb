@@ -1,4 +1,7 @@
-<h1>Listing categories</h1>
+<div class="k_form">
+  <div class="border">
+    <div class="inner_border">
+        <div class="sub_title">Categories</div>
 
 <table>
   <tr>
@@ -24,6 +27,9 @@
 <% end %>
 </table>
 
-<br />
-
-<%= link_to 'New Category', new_category_path %>
+        <div class="k_toolbar_button">
+            <%= button_to "New Category", { :action => "new" }, :method => :get, :class => "k_button_green" %>
+        </div>
+    </div>
+  </div>
+</div>
