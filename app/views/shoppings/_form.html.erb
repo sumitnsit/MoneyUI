@@ -11,7 +11,7 @@
     </div>
   <% end %>
   <div class="field">
-    <%= f.label :date %><br />
+    <%= f.label :date %>
     <%= f.text_field :date, :type => "date", :value => Time.now.strftime("%Y-%m-%d") %>
   </div>
   <div class="field">
@@ -25,7 +25,7 @@
 
 
 <div class="items2">
-<a href="#" class="add">Add Product</a>
+<a href="#" class="add" id="add_product" accesskey="n">Add Product</a>
   <table>
     <thead>
       <th>Item</th>
@@ -57,13 +57,12 @@
               <%= p.text_field :rate %>
             </td>       
             <td>
-              <%= p.text_field :amount %>
+              <%= p.text_field :amount, :id => "amount" %>
               
             </td>         
             <td>
               <%= link_to '<i class="remove fa fa-trash-o"></i>'.html_safe, nil, data: { confirm: 'Are you sure?' } %></td> 
 
-              <a href="#" class="remove">remove</a>
               <%= p.hidden_field :id %>
               <%= p.hidden_field :_destroy %>  
             </td>     

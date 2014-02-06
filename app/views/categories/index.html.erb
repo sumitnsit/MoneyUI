@@ -8,7 +8,6 @@
     <th>Name</th>
     <th>Parent</th>
     <th>Active</th>
-    <th>Note</th>
     <th></th>
     <th></th>
   </tr>
@@ -17,8 +16,13 @@
   <tr>
     <td><%= category.name %></td>
     <td><%= category.parent.name if category.parent %></td>
-    <td><%= category.active %></td>
-    <td><%= category.note %></td>
+    <td>
+      <% if category.active %>
+          <div class="k_dot_green"></div>
+      <% else %>
+          <div class="k_dot_red"></div>
+      <% end %>      
+    </td>
     <td><%= link_to '<i class="fa fa-edit"></i>'.html_safe, edit_category_path(category) %></td>
     <td><%= link_to '<i class="fa fa-trash-o"></i>'.html_safe, category, method: :delete, data: { confirm: 'Are you sure?' } %></td> 
   </tr>

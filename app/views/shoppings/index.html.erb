@@ -16,7 +16,7 @@
 
 <% @shoppings.each do |shopping| %>
   <tr>
-    <td><%= shopping.account.name %></td>
+    <td><%= shopping.account.name if shopping.account %></td>
     <td><%= shopping.amount %></td>
     <td><%= shopping.date %></td>
     <td><%= shopping.merchant.name if shopping.merchant %></td>

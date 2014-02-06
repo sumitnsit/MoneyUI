@@ -28,6 +28,10 @@
     <%= f.text_area :address, :rows => "3" %>
   </div>
   <div class="field">
+    <%= f.label :active %><br />
+    <div class="k_on_off"><%= f.check_box :active, :id => "active" %><label for="active"></label></div>
+  </div>  
+  <div class="field">
     <%= f.label :note %><br />
     <%= f.text_area :note, :rows => "3" %>
   </div>

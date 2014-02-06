@@ -7,9 +7,8 @@
   <tr>
     <th>Symbol</th>
     <th>Name</th>
-    <th>Active</th>
     <th>Unit type</th>
-    <th>Note</th>
+    <th>Active</th>
     <th></th>
     <th></th>
   </tr>
@@ -18,10 +17,15 @@
   <tr>
     <td><%= unit.symbol %></td>
     <td><%= unit.name %></td>
-    <td><%= unit.active %></td>
-    <td><%= unit.unit_type %></td>
-    <td><%= unit.note %></td>
-    <td><%= link_to 'Show', unit %></td>
+    <td><%= unit.unit_type %></td>    
+    <td>
+      <% if unit.active %>
+          <div class="k_dot_green"></div>
+      <% else %>
+          <div class="k_dot_red"></div>
+      <% end %>      
+    </td>
+    
     <td><%= link_to '<i class="fa fa-edit"></i>'.html_safe, edit_unit_path(unit) %></td>
     <td><%= link_to '<i class="fa fa-trash-o"></i>'.html_safe, unit, method: :delete, data: { confirm: 'Are you sure?' } %></td> 
 

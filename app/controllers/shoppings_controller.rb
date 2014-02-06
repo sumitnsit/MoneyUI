@@ -2,7 +2,7 @@ class ShoppingsController < ApplicationController
   # GET /shoppings
   # GET /shoppings.json
   def index
-    @shoppings = Shopping.all
+    @shoppings = Shopping.find(:all, :order => "id desc", :limit => 10)
 
     respond_to do |format|
       format.html # index.html.erb
@@ -45,7 +45,7 @@ class ShoppingsController < ApplicationController
 
     respond_to do |format|
       if @shopping.save
-        format.html { redirect_to @shopping, notice: 'Shopping was successfully created.' }
+        format.html { redirect_to shoppings_url, notice: 'Shopping was successfully created.' }
         format.json { render json: @shopping, status: :created, location: @shopping }
       else
         format.html { render action: "new" }
@@ -61,7 +61,7 @@ class ShoppingsController < ApplicationController
 
     respond_to do |format|
       if @shopping.update_attributes(params[:shopping])
-        format.html { redirect_to @shopping, notice: 'Shopping was successfully updated.' }
+        format.html { redirect_to shoppings_url, notice: 'Shopping was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

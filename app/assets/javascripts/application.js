@@ -17,4 +17,29 @@
 
 $(document).ready(function(e) {
   $('FORM').nestedFields();
+
+  $("#amount").keyup(function(event){
+    if(event.keyCode == 13){
+        $("#add_product").click();
+
+setTimeout(
+  function() 
+  {
+		$("#amount").keyup(function(event){
+    		if(event.keyCode == 13){
+        		$("#add_product").click();        
+    		}
+  		});
+  }, 5000);
+          
+
+    }
+  });
+
+$(window).keydown(function(event){
+    if(event.keyCode == 13) {
+      event.preventDefault();
+      return false;
+    }
+  });
 });

@@ -8,6 +8,7 @@
     <th>Name</th>
     <th>Url</th>
     <th>Contact</th>
+    <th>Active</th>
     <th></th>
     <th></th>
   </tr>
@@ -17,6 +18,13 @@
     <td><%= merchant.name %></td>
     <td><%= merchant.url %></td>
     <td><%= merchant.contact %></td>
+    <td>
+        <% if merchant.active %>
+            <div class="k_dot_green"></div>
+        <% else %>
+            <div class="k_dot_red"></div>
+        <% end %>
+    </td>    
     <td><%= link_to '<i class="fa fa-edit"></i>'.html_safe, edit_merchant_path(merchant) %></td>
     <td><%= link_to '<i class="fa fa-trash-o"></i>'.html_safe, merchant, method: :delete, data: { confirm: 'Are you sure?' } %></td> 
   </tr>
